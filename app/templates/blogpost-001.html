@@ -1,0 +1,114 @@
+
+{% extends 'base.html' %}
+{% block title %} Fraktus | Blog {% endblock %}
+{% block content %}
+    <div class="spacer-5 navbar-spacer-md-sm"></div>
+
+    <!-- Blog-post prefold -->
+    <div class="blogpost-container">
+        <div class="wrapper">
+            <div class="blogpost-description-container">
+                <div class="blogpost-heading-container">
+                    <h2 class="text-black">Why we created Fraktus</h2>
+                </div>
+                <div class="blogpost-properties-container">
+                    <h6>4 min read</h6>
+                    <h6>Dec 20, 2020</h6>
+                </div>
+                <div class="authors">
+                    <div class="author">
+                        <div class="avatar-container">
+                            <img src="../static/img/ruslan-1080x1080-crcl.png" alt="">
+                        </div>
+                        <div class="author-properties-container">
+                            <a href="https://github.com/dievskiy" target="_blank">Ruslan Potekhin</a>
+                            <h6>Developer</h6>
+                        </div>
+                    </div>
+                    <div class="author">
+                        <div class="avatar-container">
+                            <img src="../static/img/andrei-1080x1080-crcl.png" alt="">
+                        </div>
+                        <div class="author-properties-container">
+                            <a href="https://www.instagram.com/potenusa/" target="_blank">Andrei Potekhin</a>
+                            <h6>Designer</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="image-container bg-dark">
+                <div class="set-ratio">
+                    <img src="../static/img/blogpost-001-illu-cover.png" alt="" class="bg-warning">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog-post -->
+    <div class="blogpost-text-container">
+        <div class="wrapper">
+            <div class="blogpost-text-content">
+
+                <p>Hi, this is the first post, where we, the Fraktus team, want to tell why we decided to create a service with a totally different approach to take notes.</p>
+
+                <p>Taking notes was always important for us. For a long time, we were trying out lots of different solutions and tools: from basic apps like Google Keeps and Evernote to Telegram, which is not originally developed for note-taking.</p>
+
+                <h3>Why messenger can potentially be the best place to take notes</h3>
+
+                <p>Andrei, a designer of the app, was using Telegram for taking notes for over a year. For those of you, who aren’t familiar with this messenger, it allows you to create private channels and to message there by writing text, recording audio, forwarding messages from other channels, sending pictures, etc. The reason why Andrei was using Telegram is simple. Messengers are probably the most used apps for every smartphone user, so forwarding a link to one of the private channels in Telegram feels easier and quicker than opening a note app. But most importantly, it feels seamless.</p>
+
+                <div class="highlight-text-container">
+                    <p>Seamless transition between chatting with buddies, reading news and articles in public channels, and taking notes in private channels within one app is the reason why Andrei switched from traditional note-takers to Telegram. But, as always, there’s a twist.
+                    </p>
+                </div>
+
+                <h3>Why messenger is probably the worst place to take notes</h3>
+
+                <p>Using Telegram for taking notes means creating lots of private channels (“places to visit”, “best from Dribble”, “funny memes”) that are mixed up with lots of chats with friends, colleagues, and public channels (news, business blogs). Chats and public channels that update with new messages very often are always at the top of the list. So, you have to scroll down and dig between your old chats and channels to find your note. That causes an extreme mess. But ok, let’s say you are patient enough to scroll and dig and decided to create private channels for a trip to Paris. There are a lot of things you would like to keep such as photos and coordinates of sightseeings, links to hotels with beautiful views, places to stay, restaurants, and much more. In Telegram (and actually in many note-takers too) you would have to take these notes in one channel. Note that their type can vary, so you will post tons of ungrouped photos, links, and text to one place. Not seems to be convenient at all. </p>
+
+                <p>One of the simplest solutions is to add another level, so you can group channels. Telegram already did that with folders, but it doesn’t help much in organizing notes because of the context of the app. Telegram is a messenger, made to chat, and taking notes there seems wrong from a UX perspective.</p>
+
+                <div class="highlight-text-container">
+                    <p>Long story short, the problem is that messengers, which are our most-used apps in which we are habituated to write, send photos and links quickly, do not suit for taking notes because of the context and missing structural organization. So, we needed a note-taker with a messenger view where you can group channels to create structure. That’s why we created Fraktus.
+                    </p>
+                </div>
+
+                <h3>Key features of Fraktus</h3>
+
+                <p>As mentioned before, we’ve analyzed popular and not so popular solutions for taking notes and concluded that there are 2 essential features: messenger view and customizable structure.</p>
+
+                <p><strong>Messenger view</strong></p>
+
+                <div class="image-container">
+                    <img src="../static/img/mockup-notes-real.png" alt="" class="image-mockup">
+                </div>
+
+                <p>“Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.” That quote by Jakob Nielsen describes the idea behind Fraktus pretty well. You spend most of your screen time using social media where messaging is an essential part, so when it comes to sending hilarious memes to your friend you can do it with eyes closed. We want to apply messengers’ ease and naturalness of sending information to taking notes because we believe that it will make the process of saving and storing information significantly easier for modern users.</p>
+
+                <p><strong>Customizable structure</strong></p>
+
+                <div class="image-container">
+                    <img src="../static/img/mockup-workspaces-real.png" alt="" class="image-mockup">
+                </div>
+
+                <div class="image-container">
+                    <img src="../static/img/mockup-channels-real.png" alt="" class="image-mockup">
+                </div>
+
+                <p>Different projects need different structures. Sometimes, you want to keep it simple. For example, a place for storing funny memes can be a single channel. Sometimes, you want it to be more complex. For example, writing a thesis you might want to have several channels related to the literature and several channels related to your thoughts grouped into higher-level branches - workspaces. So, it’s pretty obvious that to fit any project the structure should be customizable. In Fraktus you have workspaces and channels. Workspaces contain child workspaces and channels. Channels contain notes. The number of children is unlimited meaning that you can create as complex structural trees as you want. Read more about how to organize notes in Fraktus in our next post.</p>
+
+                <h3>Conclusion</h3>
+
+                <div class="highlight-text-container">
+                    <p>Our goal is to create user-friendly cloud storage with the ability to significantly customize and adapt content structure.
+                    </p>
+                </div>
+
+                <p>Right now we are developing the very first version of the app. We would love to add all the features popular messengers have (sending images, recording voice messages, forwarding messages between channels inside the app, creating channels for multiple users, syncing with a web version, and much more) but our small team’s resources are very limited. The minimal valuable version of the app will only include text notes. Your support will help us add more features and make existing ones better. So, please download the app on the release date, follow us on social media, and leave feedback. Let’s take notes the way we want. Naturally, seamlessly, customizably.</p>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-5"></div>
+{% endblock %}

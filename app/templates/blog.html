@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} Fraktus | Blog {% endblock %}
+{% block content %}
+<!-- All blog posts -->
+<div class="spacer-5 navbar-spacer-md-sm"></div>
+
+<div class="all-blogposts">
+    <div class="row">
+        <div class="post-container">
+            <div class="card">
+                <div class="set-ratio">
+                    <img src="../static/img/blogpost-001-illu-cover.png" alt="Image">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Why we created Fraktus</h4>
+                    <h6 class="card-subtitle">Andrei Potekhin, Ruslan Potekhin &#8226 4 min read &#8226 Dec 25,
+                        2020</h6>
+                    <h6 class="card-text">Hi, this is the first post, where we, the Fraktus team, want to tell why we
+                        decided to create a service with a totally different approach to take notes.</h6>
+                    <div class="card-fixed-bottom">
+                        <a href="{{url_for('main.blog_1')}}">read<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="spacer-5"></div>
+{% endblock %}

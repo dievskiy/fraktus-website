@@ -1,0 +1,307 @@
+{% extends 'base.html' %}
+{% set popup_message_failed = "Error.. Please, check your data" %}
+{% set popup_message_success = "Your message has been sent!" %}
+{% block title %} Fraktus {% endblock %}
+
+{% block content %}
+
+<div id="prefold-bg"></div>
+<div class="spacer-5 navbar-spacer-md-sm"></div>
+
+<!-- Prefold -->
+<div class="prefold">
+    <div class="row">
+        <div class="description-container">
+            <div class="container">
+                <div class="description-heading">
+                    <h2>Fraktalize notes seamlessly</h2>
+                </div>
+                <div class="description-point">
+                    <h6>Fraktus is a note taking app with messenger view that allows you to create your own note
+                        architecture</h6>
+                </div>
+                <div class="description-btn">
+                    <a class="gp-badge "
+                       href='https://play.google.com/store/apps/details?id=app.rootstock&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+                       target="_blank"><img alt='Get it on Google Play'
+                                            src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+
+                    <a id="index-prefold-btn" class="btn btn-outline-primary" href="{{url_for('main.blog')}}"
+                       target="_blank" role="button">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="../static/img/prefold-illu.svg" alt="">
+        </div>
+    </div>
+</div>
+<div class="spacer-10"></div>
+
+<!-- First feature -->
+<div class="basic">
+    <div class="row">
+        <div class="image-container">
+            <img src="../static/img/mockup-notes-real.png" alt="">
+        </div>
+        <div class="description-container">
+            <div class="container">
+                <!-- Heading -->
+                <div class="description-heading">
+                    <h2>Messenger view</h2>
+                </div>
+                <!-- Point #1 -->
+                <div class="description-point">
+                    <div class="point-icon">
+                        <span class="material-icons">shuffle</span>
+                    </div>
+                    <div class="point-text-icon">
+                        <h6>Feel the seamless transition between your most-used apps and note-taker</h6>
+                    </div>
+                </div>
+                <!-- Point #2 -->
+                <div class="description-point">
+                    <div class="point-icon">
+                        <span class="material-icons">create</span>
+                    </div>
+                    <div class="point-text-icon">
+                        <h6>Edit, delete and copy notes easily</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="spacer-10"></div>
+
+<!-- Second feature -->
+<div class="basic">
+    <div class="row">
+        <div class="description-container">
+            <div class="container">
+                <!-- Heading -->
+                <div class="description-heading">
+                    <h2>Custom structure</h2>
+                </div>
+                <!-- Point #1 -->
+                <div class="description-point">
+                    <div class="point-icon">
+                        <span class="material-icons">account_tree</span>
+                    </div>
+                    <div class="point-text-icon">
+                        <h6>Workspaces contain child workspaces and channels. Channels contain notes.</h6>
+                    </div>
+                </div>
+                <!-- Point #3 -->
+                <div class="description-point">
+                    <div class="point-icon">
+                        <span class="material-icons">zoom_out_map</span>
+                    </div>
+                    <div class="point-text-icon">
+                        <h6>Keep it simple with a few amount of children or use the full potential with complex
+                            structures</h6>
+                    </div>
+                </div>
+                <!-- Point #2 -->
+                <div class="description-point">
+                    <div class="point-icon">
+                        <span class="material-icons">more_vert</span>
+                    </div>
+                    <div class="point-text-icon">
+                        <h6>Name workspaces and channels and choose suitable colors</h6>
+                    </div>
+                </div>
+                <!-- Point #4 -->
+                <div class="description-point">
+                    <div class="point-icon">
+                        <span class="material-icons">stars</span>
+                    </div>
+                    <div class="point-text-icon">
+                        <h6>Quickly access channels you use the most by adding them to "favourite channels"</h6>
+                    </div>
+                </div>
+                <!-- Radio-buttons -->
+                <form class="radio-toggler">
+                    <input type="radio" id="workspaces-radio" name="radio-toggler-1" value="workspaces"
+                           checked="checked" onClick="changeSrc()">
+                    <label for="workspaces-radio"><span>workspaces</span></label>
+                    <input type="radio" id="channels-radio" name="radio-toggler-1" value="channels"
+                           onClick="changeSrc()">
+                    <label for="channels-radio">channels</label>
+                </form>
+            </div>
+        </div>
+        <div class="image-container">
+            <img id="swap-workspaces-channels" src="../static/img/mockup-workspaces-real.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="spacer-10"></div>
+
+<!-- Follow the progress -->
+<div class="follow">
+    <div class="row">
+        <div class="image-container">
+            <img src="../static/img/follow-illu.svg" alt="">
+        </div>
+        <div class="description-container">
+            <div class="container">
+                <div class="description-heading">
+                    <h2>Follow the progress</h2>
+                </div>
+                <div class="description-point">
+                    <div class="point-text">
+                        <h6>We document the process of creating the app in our social media. Subscribe to follow the
+                            progress and get the latest info</h6>
+                    </div>
+                </div>
+                <div class="some-grid-container">
+                    <div class="some-grid-content">
+                        <div class="item">
+                            <a href="https://www.instagram.com/fraktus.app/" class="btn btn-outline-primary"
+                               target="_blank" role="button"><i class="fa fa-instagram fa-2x"></i></a>
+                        </div>
+                        <div class="item">
+                            <a href="https://twitter.com/fraktusapp" class="btn btn-outline-primary" target="_blank"
+                               role="button"><i class="fa fa-twitter fa-2x"></i></a>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.youtube.com/channel/UCnmdzuBW6KuoftBvvLgVmxA"
+                               class="btn btn-outline-primary" target="_blank" role="button"><i
+                                    class="fa fa-youtube fa-2x"></i></a>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.linkedin.com/company/fraktus" class="btn btn-outline-primary"
+                               target="_blank" role="button"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                        </div>
+                        <div class="item">
+                            <a href="https://t.me/joinchat/TS2nQldz_4iCz5JD" class="btn btn-outline-primary"
+                               target="_blank" role="button"><i class="fab fa-telegram-plane fa-2x"></i></a>
+                        </div>
+                        <div class="item">
+                            <a href="https://dribbble.com/Fraktus" class="btn btn-outline-primary" target="_blank"
+                               role="button"><i class="fab fa-dribbble fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="spacer-10"></div>
+
+<!-- Feedback -->
+<div class="feedback">
+    <div class="row">
+        <div class="description-container">
+            <div class="container">
+                <div class="description-heading">
+                    <h2>Leave feedback. It helps a lot</h2>
+                </div>
+                <div class="description-point">
+                    <div class="point-text">
+                        <h6>We're working on the very first version of the app. So, feedback is really appreciated. Feel
+                            free to tell us what you liked and what we have to improve.</h6>
+                    </div>
+                </div>
+                <div class="feedback-form">
+                    <form class="needs-validation">
+                        <div class="form-row">
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+                                <label for="inputName">Name</label>
+                                <input type="name" class="form-control" id="inputName" value=""
+                                       placeholder="Ghosty Grace" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please tell us what's your name
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" value=""
+                                       placeholder="ghosty.grace@fraktus.app" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please tell us what's your email
+                                </div>
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="inputEmail">Message</label>
+                                <textarea class="form-control" id="inputTextarea" value=""
+                                          placeholder="I like the colors of the app. Bottom navigation is really frustrating"
+                                          required></textarea>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Hmm..please write something
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="../static/img/feedback-illu.svg" alt="" class="card-img-top">
+        </div>
+    </div>
+</div>
+<div class="spacer-10"></div>
+
+<!-- Latest blog posts -->
+<div class="latest-posts">
+    <div class="description-container">
+        <div class="description-text">
+            <!-- Heading -->
+            <div class="description-heading">
+                <h2>Lastest blog posts</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="post-container">
+            <div class="card">
+                <img src="../static/img/blogpost-001-illu-preview.png" alt="Image">
+                <div class="card-body">
+                    <h4 class="card-title">Why we created Fraktus</h4>
+                    <h6 class="card-text">Hi, this is the first post, where we, the Fraktus team, want to tell why
+                        we decided to create a service with a totally different approach to take notes.</h6>
+                    <div class="card-fixed-bottom">
+                        <h6><i class="far fa-clock mr-2"></i>4 min</h6>
+                        <a href="{{url_for('main.blog')}}">read<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="spacer-10"></div>
+
+<!-- Cookiealert -->
+<div class="alert text-center cookiealert" role="alert">
+    <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a
+        href="{{url_for('main.privacy')}}" target="_blank">Learn more</a>
+    <button type="button" class="btn btn-primary acceptcookies">I agree</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+<!-- Cookiealert -->
+<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+
+<script src="../static/js/swap-img.js"></script>
+{% include 'popup/popup_failed.html' %}
+{% include 'popup/popup_success.html' %}
+
+<script src="../static/js/contact.js"></script>
+{% endblock %}
