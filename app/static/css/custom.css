@@ -9758,7 +9758,7 @@ button.bg-dark:focus {
   font-style: italic !important;
 }
 
-.text-white {
+.text-white, .prefold {
   color: #fff !important;
 }
 
@@ -10031,7 +10031,10 @@ p {
 }
 @media all and (max-width: 767px) {
   #prefold-bg {
-    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 130%;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {

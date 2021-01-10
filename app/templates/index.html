@@ -17,7 +17,7 @@
                     <h2>Fraktalize notes seamlessly</h2>
                 </div>
                 <div class="description-point">
-                    <h6>Fraktus is a note taking app with messenger view that allows you to create your own note
+                    <h6>Fraktus is a note-taking app with messenger view that allows you to create your own note
                         architecture</h6>
                 </div>
                 <div class="description-btn">
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="image-container">
-            <img src="../static/img/prefold-illu.svg" alt="">
+            <img src="{{url_for('static', filename = 'img/prefold-illu.svg')}}" alt="">
         </div>
     </div>
 </div>
@@ -42,7 +42,7 @@
 <div class="basic">
     <div class="row">
         <div class="image-container">
-            <img src="../static/img/mockup-notes-real.png" alt="">
+            <img src="{{url_for('static', filename = 'img/mockup-notes-real.png')}}" alt="">
         </div>
         <div class="description-container">
             <div class="container">
@@ -132,7 +132,7 @@
             </div>
         </div>
         <div class="image-container">
-            <img id="swap-workspaces-channels" src="../static/img/mockup-workspaces-real.png" alt="">
+            <img id="swap-workspaces-channels" src="{{url_for('static', filename = 'img/mockup-workspaces-real.png')}}" alt="">
         </div>
     </div>
 </div>
@@ -142,7 +142,7 @@
 <div class="follow">
     <div class="row">
         <div class="image-container">
-            <img src="../static/img/follow-illu.svg" alt="">
+            <img src="{{url_for('static', filename = 'img/follow-illu.svg')}}" alt="">
         </div>
         <div class="description-container">
             <div class="container">
@@ -248,7 +248,7 @@
             </div>
         </div>
         <div class="image-container">
-            <img src="../static/img/feedback-illu.svg" alt="" class="card-img-top">
+            <img src="{{url_for('static', filename = 'img/feedback-illu.svg')}}" alt="" class="card-img-top">
         </div>
     </div>
 </div>
@@ -267,7 +267,7 @@
     <div class="row">
         <div class="post-container">
             <div class="card">
-                <img src="../static/img/blogpost-001-illu-preview.png" alt="Image">
+                <img src="{{url_for('static', filename = 'img/blogpost-001-illu-preview.png')}}" alt="Image">
                 <div class="card-body">
                     <h4 class="card-title">Why we created Fraktus</h4>
                     <h6 class="card-text">Hi, this is the first post, where we, the Fraktus team, want to tell why
@@ -299,9 +299,9 @@
 <!-- Cookiealert -->
 <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
 
-<script src="../static/js/swap-img.js"></script>
+<script src="/static/js/swap-img.js"></script>
 {% include 'popup/popup_failed.html' %}
 {% include 'popup/popup_success.html' %}
 
-<script src="../static/js/contact.js"></script>
+<script src="/static/js/contact.js"></script>
 {% endblock %}

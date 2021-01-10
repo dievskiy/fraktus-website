@@ -18,7 +18,7 @@
                 <div class="authors">
                     <div class="author">
                         <div class="avatar-container">
-                            <img src="../static/img/ruslan-1080x1080-crcl.png" alt="">
+                            <img src="{{url_for('static', filename = 'img/ruslan-1080x1080-crcl.png')}}" alt="">
                         </div>
                         <div class="author-properties-container">
                             <a href="https://github.com/dievskiy" target="_blank">Ruslan Potekhin</a>
@@ -27,7 +27,7 @@
                     </div>
                     <div class="author">
                         <div class="avatar-container">
-                            <img src="../static/img/andrei-1080x1080-crcl.png" alt="">
+                            <img src="{{url_for('static', filename = 'img/andrei-1080x1080-crcl.png')}}" alt="">
                         </div>
                         <div class="author-properties-container">
                             <a href="https://www.instagram.com/potenusa/" target="_blank">Andrei Potekhin</a>
@@ -40,7 +40,7 @@
         <div class="wrapper">
             <div class="image-container bg-dark">
                 <div class="set-ratio">
-                    <img src="../static/img/blogpost-001-illu-cover.png" alt="" class="bg-warning">
+                    <img src="{{url_for('static', filename = 'img/blogpost-001-illu-cover.png')}}" alt="" class="bg-warning">
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
                 <p><strong>Messenger view</strong></p>
 
                 <div class="image-container">
-                    <img src="../static/img/mockup-notes-real.png" alt="" class="image-mockup">
+                    <img src="{{url_for('static', filename = 'img/mockup-notes-real.png')}}" alt="" class="image-mockup">
                 </div>
 
                 <p>“Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.” That quote by Jakob Nielsen describes the idea behind Fraktus pretty well. You spend most of your screen time using social media where messaging is an essential part, so when it comes to sending hilarious memes to your friend you can do it with eyes closed. We want to apply messengers’ ease and naturalness of sending information to taking notes because we believe that it will make the process of saving and storing information significantly easier for modern users.</p>
@@ -90,11 +90,11 @@
                 <p><strong>Customizable structure</strong></p>
 
                 <div class="image-container">
-                    <img src="../static/img/mockup-workspaces-real.png" alt="" class="image-mockup">
+                    <img src="{{url_for('static', filename = 'img/mockup-workspaces-real.png')}}" alt="" class="image-mockup">
                 </div>
 
                 <div class="image-container">
-                    <img src="../static/img/mockup-channels-real.png" alt="" class="image-mockup">
+                    <img src="{{url_for('static', filename = 'img/mockup-channels-real.png')}}" alt="" class="image-mockup">
                 </div>
 
                 <p>Different projects need different structures. Sometimes, you want to keep it simple. For example, a place for storing funny memes can be a single channel. Sometimes, you want it to be more complex. For example, writing a thesis you might want to have several channels related to the literature and several channels related to your thoughts grouped into higher-level branches - workspaces. So, it’s pretty obvious that to fit any project the structure should be customizable. In Fraktus you have workspaces and channels. Workspaces contain child workspaces and channels. Channels contain notes. The number of children is unlimited meaning that you can create as complex structural trees as you want. Read more about how to organize notes in Fraktus in our next post.</p>
