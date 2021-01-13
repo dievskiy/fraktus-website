@@ -6,11 +6,14 @@ $input-bg: transparent;
 $card-border-width: 0;
 
 
+@import "node_modules/bootstrap-scss/bootstrap";
+
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0 !important;
 }
 h2 {
-    font-weight: 600 !important;
+    font-weight: 800 !important;
     line-height: 2.9rem;
 }
 html, body {
@@ -57,26 +60,26 @@ p {
     background: linear-gradient(0deg, rgba(120,0,215,1) 0%, rgba(0,212,255,1) 100%);
 }
 #prefold-bg {
-    background: url(../../../../../Downloads/fraktus-website-v7.3/img/prefold-bg.svg);
+    background: url(../img/prefold-bg.svg);
     position: absolute;
     @media all and (max-width: 767px) {
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 130%;        
+        height: 160%;        
     }    
     @media all and (min-width: 768px) and (max-width: 991px) {
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 60%;
+        height: 90%;
     }
     @media all and (min-width: 992px) {
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         height: 0;
-        padding-top: 70%;
+        padding-top: 80%;
     }
 }
 
@@ -166,33 +169,20 @@ p {
     }
   }
 }
-@mixin some-grid($columns, $rows) {    
-    position:relative;
-    &:before {
-        content: "";
-        display:inline-block;
-        padding-top: calc(#{$rows} / #{$columns} * 100%);
-    }
+@mixin some-grid($size, $columns, $rows, $gap) {    
     
     .some-grid-content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
         display: grid;
-        grid-template-columns: repeat(#{$columns},minmax(3rem,1fr));
-        grid-template-rows: repeat(#{$rows},minmax(3rem,1fr));
-
-        .item {
-            padding: 0.5rem;
-        }
+//        width: calc(#{$size} * #{$columns} + #{$rows} * 2);
+        grid-template-columns: repeat(#{$columns}, #{$size});
+        grid-template-rows: repeat(#{$rows}, #{$size}); 
+        gap: $gap;        
+        
         .btn {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
-            @extend .d-flex, .align-items-center, .justify-content-center;
         }
     }    
 }
@@ -260,7 +250,7 @@ p {
         box-shadow: 0 .5rem 1rem rgba($black, .15);
     }
     @media all and (min-width: 992px) {
-        box-shadow: 0 .5rem 1rem rgba($black, .15);
+//        box-shadow: 0 .5rem 1rem rgba($black, .15);
         .nav-link:hover {
             transform: translate(0,-5%);
         }   
@@ -286,7 +276,8 @@ p {
         @include illustration-container;
     }
     .description-container {
-        @include basic-description-container;   
+        @include basic-description-container;
+        color: #FFF9B0;
     }
     .btn {
         @extend .btn-lg;
@@ -342,6 +333,7 @@ p {
             max-height: 25rem;
             img {
                 height: 100%;
+                width: auto;
             }
         }        
     }
@@ -377,8 +369,19 @@ p {
     }
     .some-grid-container {
         @extend .mt-lg-4, .mt-md-3, .mt-3, .align-self-center;
-        @include some-grid ($columns: 3, $rows: 2);        
-        width: 20rem;
+        .btn {
+            @extend .btn-outline-primary;
+            @include center;
+        }        
+        @media all and (max-width: 767px) {
+            @include some-grid ($size: 3rem, $columns: 6, $rows: 1, $gap: 0.5rem);
+        }    
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include some-grid ($size: 3rem, $columns: 6, $rows: 1, $gap: 0.5rem);
+        }
+        @media all and (min-width: 992px) {
+            @include some-grid ($size: 3rem, $columns: 6, $rows: 1, $gap: 1rem);
+        }                
     }
 }
 
@@ -419,6 +422,7 @@ p {
         
     h4 {
         font-weight: $bold;
+        line-height: 2.4rem;        
     }
     img {
         border-radius: 0.6rem 0.6rem 0 0;
@@ -464,9 +468,20 @@ p {
         }
     }
     .some-grid-container {
-        @extend .mt-3, .align-self-center;
-        @include some-grid ($columns: 3, $rows: 2);
-        width: 20rem;
+        @extend .mt-lg-4, .mt-md-3, .mt-3, .align-self-center;
+        .btn {
+            @extend .btn-outline-primary;
+            @include center;
+        }        
+        @media all and (max-width: 767px) {
+            @include some-grid ($size: 3rem, $columns: 6, $rows: 1, $gap: 0.5rem);
+        }    
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @include some-grid ($size: 3rem, $columns: 6, $rows: 1, $gap: 0.5rem);
+        }
+        @media all and (min-width: 992px) {
+            @include some-grid ($size: 3rem, $columns: 6, $rows: 1, $gap: 1rem);
+        }                
     }
     .email-container {
         @extend .align-self-center, .my-4, .text-primary;

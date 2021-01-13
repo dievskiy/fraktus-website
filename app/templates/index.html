@@ -8,16 +8,17 @@
 <div id="prefold-bg"></div>
 <div class="spacer-5 navbar-spacer-md-sm"></div>
 
+
 <!-- Prefold -->
 <div class="prefold">
     <div class="row">
         <div class="description-container">
             <div class="container">
                 <div class="description-heading">
-                    <h2>Fraktalize notes seamlessly</h2>
+                    <h2>Blur the seam between messaging and taking notes</h2>
                 </div>
                 <div class="description-point">
-                    <h6>Fraktus is a note-taking app with messenger view that allows you to create your own note
+                    <h6>Fraktus is a note-taking app with a messenger view that allows you to create your own note
                         architecture</h6>
                 </div>
                 <div class="description-btn">
@@ -32,7 +33,7 @@
             </div>
         </div>
         <div class="image-container">
-            <img src="{{url_for('static', filename = 'img/prefold-illu.svg')}}" alt="">
+            <img src="{{url_for('static', filename = 'img/prefold-illu-2.png')}}" alt="">
         </div>
     </div>
 </div>
@@ -132,7 +133,8 @@
             </div>
         </div>
         <div class="image-container">
-            <img id="swap-workspaces-channels" src="{{url_for('static', filename = 'img/mockup-workspaces-real.png')}}" alt="">
+            <img id="swap-workspaces-channels" src="{{url_for('static', filename = 'img/mockup-workspaces-real.png')}}"
+                 alt="">
         </div>
     </div>
 </div>
@@ -142,7 +144,7 @@
 <div class="follow">
     <div class="row">
         <div class="image-container">
-            <img src="{{url_for('static', filename = 'img/follow-illu.svg')}}" alt="">
+            <img src="{{url_for('static', filename = 'img/follow-illu-2.png')}}" alt="">
         </div>
         <div class="description-container">
             <div class="container">
@@ -156,34 +158,27 @@
                     </div>
                 </div>
                 <div class="some-grid-container">
-                    <div class="some-grid-content">
-                        <div class="item">
-                            <a href="https://www.instagram.com/fraktus.app/" class="btn btn-outline-primary"
-                               target="_blank" role="button"><i class="fa fa-instagram fa-2x"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="https://twitter.com/fraktusapp" class="btn btn-outline-primary" target="_blank"
-                               role="button"><i class="fa fa-twitter fa-2x"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="https://www.youtube.com/channel/UCnmdzuBW6KuoftBvvLgVmxA"
-                               class="btn btn-outline-primary" target="_blank" role="button"><i
-                                    class="fa fa-youtube fa-2x"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="https://www.linkedin.com/company/fraktus" class="btn btn-outline-primary"
-                               target="_blank" role="button"><i class="fab fa-linkedin-in fa-2x"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="https://t.me/joinchat/TS2nQldz_4iCz5JD" class="btn btn-outline-primary"
-                               target="_blank" role="button"><i class="fab fa-telegram-plane fa-2x"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="https://dribbble.com/Fraktus" class="btn btn-outline-primary" target="_blank"
-                               role="button"><i class="fab fa-dribbble fa-2x"></i></a>
+                        <div class="some-grid-content">
+                            <div class="item">
+                                <a href="https://www.instagram.com/fraktus.app/" class="btn" target="_blank" role="button"><i class="fa fa-instagram fa-lg"></i></a>
+                            </div>
+                            <div class="item">
+                                <a href="https://twitter.com/fraktusapp" class="btn" target="_blank" role="button"><i class="fa fa-twitter fa-lg"></i></a>
+                            </div>
+                            <div class="item">
+                                <a href="https://www.youtube.com/channel/UCnmdzuBW6KuoftBvvLgVmxA" class="btn" target="_blank" role="button"><i class="fa fa-youtube fa-lg"></i></a>
+                            </div>
+                            <div class="item">
+                                <a href="https://www.linkedin.com/company/fraktus" class="btn" target="_blank" role="button"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                            </div>
+                            <div class="item">
+                                <a href="https://t.me/joinchat/TS2nQldz_4iCz5JD" class="btn" target="_blank" role="button"><i class="fab fa-telegram-plane fa-lg"></i></a>
+                            </div>
+                            <div class="item">
+                                <a href="https://dribbble.com/Fraktus" class="btn" target="_blank" role="button"><i class="fab fa-dribbble fa-lg"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
@@ -248,7 +243,7 @@
             </div>
         </div>
         <div class="image-container">
-            <img src="{{url_for('static', filename = 'img/feedback-illu.svg')}}" alt="" class="card-img-top">
+            <img src="{{url_for('static', filename = 'img/feedback-illu-2.png')}}" alt="" class="card-img-top">
         </div>
     </div>
 </div>
@@ -267,14 +262,17 @@
     <div class="row">
         <div class="post-container">
             <div class="card">
-                <img src="{{url_for('static', filename = 'img/blogpost-001-illu-preview.png')}}" alt="Image">
+                <div class="set-ratio">
+                    <img src="{{url_for('static', filename = 'img/blogpost-001-illu-cover.png')}}" alt="Image">
+                </div>
                 <div class="card-body">
                     <h4 class="card-title">Why we created Fraktus</h4>
-                    <h6 class="card-text">Hi, this is the first post, where we, the Fraktus team, want to tell why
-                        we decided to create a service with a totally different approach to take notes.</h6>
+                    <h6 class="card-subtitle">Andrei Potekhin, Ruslan Potekhin &#8226 4 min read &#8226 Dec 25,
+                        2020</h6>
+                    <h6 class="card-text">Hi, this is the first post, where we, the Fraktus team, want to tell why we
+                        decided to create a service with a totally different approach to taking notes.</h6>
                     <div class="card-fixed-bottom">
-                        <h6><i class="far fa-clock mr-2"></i>4 min</h6>
-                        <a href="{{url_for('main.blog')}}">read<i class="fas fa-arrow-right"></i></a>
+                        <a href="{{url_for('main.blog_1')}}">read<i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -282,6 +280,7 @@
     </div>
 </div>
 <div class="spacer-10"></div>
+
 
 <!-- Cookiealert -->
 <div class="alert text-center cookiealert" role="alert">

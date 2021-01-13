@@ -2655,28 +2655,28 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
 }
 
-.btn-outline-primary {
+.btn-outline-primary, .footer-container .some-grid-container .btn, .follow .some-grid-container .btn {
   color: #7800d7;
   border-color: #7800d7;
 }
-.btn-outline-primary:hover {
+.btn-outline-primary:hover, .footer-container .some-grid-container .btn:hover, .follow .some-grid-container .btn:hover {
   color: #fff;
   background-color: #7800d7;
   border-color: #7800d7;
 }
-.btn-outline-primary:focus, .btn-outline-primary.focus {
+.btn-outline-primary:focus, .footer-container .some-grid-container .btn:focus, .follow .some-grid-container .btn:focus, .btn-outline-primary.focus, .footer-container .some-grid-container .focus.btn, .follow .some-grid-container .focus.btn {
   box-shadow: 0 0 0 0.2rem rgba(120, 0, 215, 0.5);
 }
-.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+.btn-outline-primary.disabled, .footer-container .some-grid-container .disabled.btn, .follow .some-grid-container .disabled.btn, .btn-outline-primary:disabled, .footer-container .some-grid-container .btn:disabled, .follow .some-grid-container .btn:disabled {
   color: #7800d7;
   background-color: transparent;
 }
-.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+.btn-outline-primary:not(:disabled):not(.disabled):active, .footer-container .some-grid-container .btn:not(:disabled):not(.disabled):active, .follow .some-grid-container .btn:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .footer-container .some-grid-container .btn:not(:disabled):not(.disabled).active, .follow .some-grid-container .btn:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle, .footer-container .some-grid-container .show > .dropdown-toggle.btn, .follow .some-grid-container .show > .dropdown-toggle.btn {
   color: #fff;
   background-color: #7800d7;
   border-color: #7800d7;
 }
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .footer-container .some-grid-container .btn:not(:disabled):not(.disabled):active:focus, .follow .some-grid-container .btn:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .footer-container .some-grid-container .btn:not(:disabled):not(.disabled).active:focus, .follow .some-grid-container .btn:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus, .footer-container .some-grid-container .show > .dropdown-toggle.btn:focus, .follow .some-grid-container .show > .dropdown-toggle.btn:focus {
   box-shadow: 0 0 0 0.2rem rgba(120, 0, 215, 0.5);
 }
 
@@ -6259,7 +6259,7 @@ button.bg-dark:focus {
   display: table-cell !important;
 }
 
-.d-flex, .radio-toggler, .icon-container-circle, .circle-container .btn, .icon-container, .blogpost-text-content .image-container, .blogpost-container .image-container, .blogpost-description-container, .blogpost-container .wrapper, .blogpost-text-container .wrapper, .privacy-text-container .wrapper, .footer-container .some-grid-container .some-grid-content .btn, .footer-container, .post-container .card-fixed-bottom, .post-container .card-body, .follow .some-grid-container .some-grid-content .btn, .follow .description-container .container, .follow .description-container .highlight-text-container, .follow .description-container .blogpost-container, .follow .description-container .blogpost-text-container, .follow .description-container .privacy-text-container, .follow .description-container .footer-container, .follow .description-container .description-text, .follow .description-container .prefold, .follow .description-container .basic, .follow .description-container .feedback, .follow .description-container .latest-posts, .follow .description-container .all-blogposts, .follow .description-container .follow, .latest-posts .row, .latest-posts .blogpost-container .wrapper, .blogpost-container .latest-posts .wrapper, .latest-posts .blogpost-text-container .wrapper, .blogpost-text-container .latest-posts .wrapper, .latest-posts .privacy-text-container .wrapper, .privacy-text-container .latest-posts .wrapper, .latest-posts .footer-container .nav-container, .footer-container .latest-posts .nav-container, .latest-posts .feedback-form, .latest-posts .description-point, .latest-posts .description-heading, .all-blogposts .row, .all-blogposts .blogpost-container .wrapper, .blogpost-container .all-blogposts .wrapper, .all-blogposts .blogpost-text-container .wrapper, .blogpost-text-container .all-blogposts .wrapper, .all-blogposts .privacy-text-container .wrapper, .privacy-text-container .all-blogposts .wrapper, .all-blogposts .footer-container .nav-container, .footer-container .all-blogposts .nav-container, .all-blogposts .feedback-form, .all-blogposts .description-point, .all-blogposts .description-heading, .feedback .image-container, .feedback .row, .feedback .blogpost-container .wrapper, .blogpost-container .feedback .wrapper, .feedback .blogpost-text-container .wrapper, .blogpost-text-container .feedback .wrapper, .feedback .privacy-text-container .wrapper, .privacy-text-container .feedback .wrapper, .feedback .footer-container .nav-container, .footer-container .feedback .nav-container, .feedback .feedback-form, .feedback .description-point, .feedback .description-heading, .basic .description-container, .follow .description-container, .basic .image-container, .follow .image-container, .basic .row, .basic .blogpost-container .wrapper, .blogpost-container .basic .wrapper, .basic .blogpost-text-container .wrapper, .blogpost-text-container .basic .wrapper, .basic .privacy-text-container .wrapper, .privacy-text-container .basic .wrapper, .basic .footer-container .nav-container, .footer-container .basic .nav-container, .basic .feedback-form, .basic .description-point, .basic .description-heading, .follow .row, .follow .blogpost-container .wrapper, .blogpost-container .follow .wrapper, .follow .blogpost-text-container .wrapper, .blogpost-text-container .follow .wrapper, .follow .privacy-text-container .wrapper, .privacy-text-container .follow .wrapper, .follow .footer-container .nav-container, .footer-container .follow .nav-container, .follow .feedback-form, .follow .description-point, .follow .description-heading, .prefold #index-prefold-btn, .prefold .description-container, .prefold .image-container, .prefold .row, .prefold .blogpost-container .wrapper, .blogpost-container .prefold .wrapper, .prefold .blogpost-text-container .wrapper, .blogpost-text-container .prefold .wrapper, .prefold .privacy-text-container .wrapper, .privacy-text-container .prefold .wrapper, .prefold .footer-container .nav-container, .footer-container .prefold .nav-container, .prefold .feedback-form, .prefold .description-point, .prefold .description-heading, .prefold .description-btn {
+.d-flex, .radio-toggler, .icon-container-circle, .circle-container .btn, .icon-container, .blogpost-text-content .image-container, .blogpost-container .image-container, .blogpost-description-container, .blogpost-container .wrapper, .blogpost-text-container .wrapper, .privacy-text-container .wrapper, .footer-container .some-grid-container .btn, .footer-container, .post-container .card-fixed-bottom, .post-container .card-body, .follow .some-grid-container .btn, .follow .description-container .container, .follow .description-container .highlight-text-container, .follow .description-container .blogpost-container, .follow .description-container .blogpost-text-container, .follow .description-container .privacy-text-container, .follow .description-container .footer-container, .follow .description-container .description-text, .follow .description-container .prefold, .follow .description-container .basic, .follow .description-container .feedback, .follow .description-container .latest-posts, .follow .description-container .all-blogposts, .follow .description-container .follow, .latest-posts .row, .latest-posts .blogpost-container .wrapper, .blogpost-container .latest-posts .wrapper, .latest-posts .blogpost-text-container .wrapper, .blogpost-text-container .latest-posts .wrapper, .latest-posts .privacy-text-container .wrapper, .privacy-text-container .latest-posts .wrapper, .latest-posts .footer-container .nav-container, .footer-container .latest-posts .nav-container, .latest-posts .feedback-form, .latest-posts .description-point, .latest-posts .description-heading, .all-blogposts .row, .all-blogposts .blogpost-container .wrapper, .blogpost-container .all-blogposts .wrapper, .all-blogposts .blogpost-text-container .wrapper, .blogpost-text-container .all-blogposts .wrapper, .all-blogposts .privacy-text-container .wrapper, .privacy-text-container .all-blogposts .wrapper, .all-blogposts .footer-container .nav-container, .footer-container .all-blogposts .nav-container, .all-blogposts .feedback-form, .all-blogposts .description-point, .all-blogposts .description-heading, .feedback .image-container, .feedback .row, .feedback .blogpost-container .wrapper, .blogpost-container .feedback .wrapper, .feedback .blogpost-text-container .wrapper, .blogpost-text-container .feedback .wrapper, .feedback .privacy-text-container .wrapper, .privacy-text-container .feedback .wrapper, .feedback .footer-container .nav-container, .footer-container .feedback .nav-container, .feedback .feedback-form, .feedback .description-point, .feedback .description-heading, .basic .description-container, .follow .description-container, .basic .image-container, .follow .image-container, .basic .row, .basic .blogpost-container .wrapper, .blogpost-container .basic .wrapper, .basic .blogpost-text-container .wrapper, .blogpost-text-container .basic .wrapper, .basic .privacy-text-container .wrapper, .privacy-text-container .basic .wrapper, .basic .footer-container .nav-container, .footer-container .basic .nav-container, .basic .feedback-form, .basic .description-point, .basic .description-heading, .follow .row, .follow .blogpost-container .wrapper, .blogpost-container .follow .wrapper, .follow .blogpost-text-container .wrapper, .blogpost-text-container .follow .wrapper, .follow .privacy-text-container .wrapper, .privacy-text-container .follow .wrapper, .follow .footer-container .nav-container, .footer-container .follow .nav-container, .follow .feedback-form, .follow .description-point, .follow .description-heading, .prefold #index-prefold-btn, .prefold .description-container, .prefold .image-container, .prefold .row, .prefold .blogpost-container .wrapper, .blogpost-container .prefold .wrapper, .prefold .blogpost-text-container .wrapper, .blogpost-text-container .prefold .wrapper, .prefold .privacy-text-container .wrapper, .privacy-text-container .prefold .wrapper, .prefold .footer-container .nav-container, .footer-container .prefold .nav-container, .prefold .feedback-form, .prefold .description-point, .prefold .description-heading, .prefold .description-btn {
   display: flex !important;
 }
 
@@ -6549,7 +6549,7 @@ button.bg-dark:focus {
   justify-content: flex-end !important;
 }
 
-.justify-content-center, .radio-toggler, .icon-container-circle, .circle-container .btn, .icon-container, .blogpost-text-content .image-container, .blogpost-description-container, .blogpost-container .wrapper, .blogpost-text-container .wrapper, .privacy-text-container .wrapper, .footer-container .some-grid-container .some-grid-content .btn, .footer-container, .follow .some-grid-container .some-grid-content .btn, .follow .description-container .container, .follow .description-container .highlight-text-container, .follow .description-container .blogpost-container, .follow .description-container .blogpost-text-container, .follow .description-container .privacy-text-container, .follow .description-container .footer-container, .follow .description-container .description-text, .follow .description-container .prefold, .follow .description-container .basic, .follow .description-container .feedback, .follow .description-container .latest-posts, .follow .description-container .all-blogposts, .follow .description-container .follow, .latest-posts .row, .latest-posts .footer-container .nav-container, .footer-container .latest-posts .nav-container, .latest-posts .feedback-form, .latest-posts .description-point, .latest-posts .description-heading, .latest-posts .prefold .description-btn, .prefold .latest-posts .description-btn, .all-blogposts .row, .all-blogposts .footer-container .nav-container, .footer-container .all-blogposts .nav-container, .all-blogposts .feedback-form, .all-blogposts .description-point, .all-blogposts .description-heading, .all-blogposts .prefold .description-btn, .prefold .all-blogposts .description-btn, .feedback .image-container, .basic .description-container, .follow .description-container, .basic .image-container, .follow .image-container, .prefold #index-prefold-btn, .prefold .description-container, .prefold .image-container {
+.justify-content-center, .radio-toggler, .icon-container-circle, .circle-container .btn, .icon-container, .blogpost-text-content .image-container, .blogpost-description-container, .blogpost-container .wrapper, .blogpost-text-container .wrapper, .privacy-text-container .wrapper, .footer-container .some-grid-container .btn, .footer-container, .follow .some-grid-container .btn, .follow .description-container .container, .follow .description-container .highlight-text-container, .follow .description-container .blogpost-container, .follow .description-container .blogpost-text-container, .follow .description-container .privacy-text-container, .follow .description-container .footer-container, .follow .description-container .description-text, .follow .description-container .prefold, .follow .description-container .basic, .follow .description-container .feedback, .follow .description-container .latest-posts, .follow .description-container .all-blogposts, .follow .description-container .follow, .latest-posts .row, .latest-posts .footer-container .nav-container, .footer-container .latest-posts .nav-container, .latest-posts .feedback-form, .latest-posts .description-point, .latest-posts .description-heading, .latest-posts .prefold .description-btn, .prefold .latest-posts .description-btn, .all-blogposts .row, .all-blogposts .footer-container .nav-container, .footer-container .all-blogposts .nav-container, .all-blogposts .feedback-form, .all-blogposts .description-point, .all-blogposts .description-heading, .all-blogposts .prefold .description-btn, .prefold .all-blogposts .description-btn, .feedback .image-container, .basic .description-container, .follow .description-container, .basic .image-container, .follow .image-container, .prefold #index-prefold-btn, .prefold .description-container, .prefold .image-container {
   justify-content: center !important;
 }
 
@@ -6569,7 +6569,7 @@ button.bg-dark:focus {
   align-items: flex-end !important;
 }
 
-.align-items-center, .radio-toggler, .icon-container-circle, .circle-container .btn, .icon-container, .footer-container .some-grid-container .some-grid-content .btn, .post-container .card-fixed-bottom, .follow .some-grid-container .some-grid-content .btn, .feedback .image-container, .basic .description-container, .follow .description-container, .basic .image-container, .follow .image-container, .prefold #index-prefold-btn, .prefold .description-container, .prefold .image-container {
+.align-items-center, .radio-toggler, .icon-container-circle, .circle-container .btn, .icon-container, .footer-container .some-grid-container .btn, .post-container .card-fixed-bottom, .follow .some-grid-container .btn, .feedback .image-container, .basic .description-container, .follow .description-container, .basic .image-container, .follow .image-container, .prefold #index-prefold-btn, .prefold .description-container, .prefold .image-container {
   align-items: center !important;
 }
 
@@ -8398,7 +8398,7 @@ button.bg-dark:focus {
     margin: 1rem !important;
   }
 
-  .mt-md-3, .follow .some-grid-container,
+  .mt-md-3, .footer-container .some-grid-container, .follow .some-grid-container,
 .my-md-3 {
     margin-top: 1rem !important;
   }
@@ -8857,7 +8857,7 @@ button.bg-dark:focus {
     margin: 1.5rem !important;
   }
 
-  .mt-lg-4, .follow .some-grid-container,
+  .mt-lg-4, .footer-container .some-grid-container, .follow .some-grid-container,
 .my-lg-4 {
     margin-top: 1.5rem !important;
   }
@@ -9970,7 +9970,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-weight: 600 !important;
+  font-weight: 800 !important;
   line-height: 2.9rem;
 }
 
@@ -10034,7 +10034,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 130%;
+    height: 160%;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -10042,7 +10042,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 60%;
+    height: 90%;
   }
 }
 @media all and (min-width: 992px) {
@@ -10051,7 +10051,7 @@ p {
     background-repeat: no-repeat;
     width: 100%;
     height: 0;
-    padding-top: 70%;
+    padding-top: 80%;
   }
 }
 
@@ -10108,9 +10108,6 @@ p {
   }
 }
 @media all and (min-width: 992px) {
-  .navbar {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  }
   .navbar .nav-link:hover {
     transform: translate(0, -5%);
   }
@@ -10127,6 +10124,9 @@ p {
 }
 .prefold .image-container img {
   width: 100% !important;
+}
+.prefold .description-container {
+  color: #FFF9B0;
 }
 @media all and (max-width: 767px) {
   .prefold .gp-badge img {
@@ -10154,6 +10154,7 @@ p {
   }
   .feedback .image-container img {
     height: 100%;
+    width: auto;
   }
 }
 .latest-posts h6, .all-blogposts h6 {
@@ -10162,33 +10163,47 @@ p {
 .follow .image-container img {
   width: 100% !important;
 }
-.follow .some-grid-container {
-  position: relative;
-  width: 20rem;
+@media all and (max-width: 767px) {
+  .follow .some-grid-container .some-grid-content {
+    display: grid;
+    grid-template-columns: repeat(6, 3rem);
+    grid-template-rows: repeat(1, 3rem);
+    gap: 0.5rem;
+  }
+  .follow .some-grid-container .some-grid-content .btn {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
-.follow .some-grid-container:before {
-  content: "";
-  display: inline-block;
-  padding-top: calc(2 / 3 * 100%);
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .follow .some-grid-container .some-grid-content {
+    display: grid;
+    grid-template-columns: repeat(6, 3rem);
+    grid-template-rows: repeat(1, 3rem);
+    gap: 0.5rem;
+  }
+  .follow .some-grid-container .some-grid-content .btn {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
-.follow .some-grid-container .some-grid-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(3rem, 1fr));
-  grid-template-rows: repeat(2, minmax(3rem, 1fr));
-}
-.follow .some-grid-container .some-grid-content .item {
-  padding: 0.5rem;
-}
-.follow .some-grid-container .some-grid-content .btn {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+@media all and (min-width: 992px) {
+  .follow .some-grid-container .some-grid-content {
+    display: grid;
+    grid-template-columns: repeat(6, 3rem);
+    grid-template-rows: repeat(1, 3rem);
+    gap: 1rem;
+  }
+  .follow .some-grid-container .some-grid-content .btn {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .point-icon {
@@ -10203,6 +10218,7 @@ p {
 
 .post-container h4 {
   font-weight: 600;
+  line-height: 2.4rem;
 }
 .post-container img {
   border-radius: 0.6rem 0.6rem 0 0;
@@ -10210,33 +10226,47 @@ p {
 .footer-container .nav-container ul a {
   display: inline;
 }
-.footer-container .some-grid-container {
-  position: relative;
-  width: 20rem;
+@media all and (max-width: 767px) {
+  .footer-container .some-grid-container .some-grid-content {
+    display: grid;
+    grid-template-columns: repeat(6, 3rem);
+    grid-template-rows: repeat(1, 3rem);
+    gap: 0.5rem;
+  }
+  .footer-container .some-grid-container .some-grid-content .btn {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
-.footer-container .some-grid-container:before {
-  content: "";
-  display: inline-block;
-  padding-top: calc(2 / 3 * 100%);
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .footer-container .some-grid-container .some-grid-content {
+    display: grid;
+    grid-template-columns: repeat(6, 3rem);
+    grid-template-rows: repeat(1, 3rem);
+    gap: 0.5rem;
+  }
+  .footer-container .some-grid-container .some-grid-content .btn {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
-.footer-container .some-grid-container .some-grid-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(3rem, 1fr));
-  grid-template-rows: repeat(2, minmax(3rem, 1fr));
-}
-.footer-container .some-grid-container .some-grid-content .item {
-  padding: 0.5rem;
-}
-.footer-container .some-grid-container .some-grid-content .btn {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+@media all and (min-width: 992px) {
+  .footer-container .some-grid-container .some-grid-content {
+    display: grid;
+    grid-template-columns: repeat(6, 3rem);
+    grid-template-rows: repeat(1, 3rem);
+    gap: 1rem;
+  }
+  .footer-container .some-grid-container .some-grid-content .btn {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 .footer-container .email-container {
   display: inline;
