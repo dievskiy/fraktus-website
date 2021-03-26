@@ -16,8 +16,8 @@ __pycache__/
 *.so
 
 # photos
-*.jpg
-*.png
+#*.jpg
+#*.png
 
 # Distribution / packaging
 bin/
